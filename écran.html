@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width" />
+  <title>Em-habanim</title>
+  <link rel="stylesheet" href="écran.css" />
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
+<link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+  <link rel="manifest" href="manifest.json">
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
+<link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+  <link rel="manifest" href="manifest.json">
+    <link rel="shortcut icon" href= "https://images.emojiterra.com/google/noto-emoji/v2.034/512px/1f54d.png">
+</head>
+<body>
+  <p>
+  <p>
+<body onload=showDate();> 
+ <span id='horloge'></span>
+
+<script>
+  function refresh(){
+             var t = 1000; // rafraîchissement en millisecondes
+             setTimeout('showDate()',t)
+         }
+         
+         function showDate() {
+             var date = new Date()
+             var h = date.getHours();
+             var m = date.getMinutes();
+             var s = date.getSeconds();
+             if( h < 10 ){ h = '0' + h; }
+             if( m < 10 ){ m = '0' + m; }
+             if( s < 10 ){ s = '0' + s; }
+             var time = h + ':' + m + ':' + s
+             document.getElementById('horloge').innerHTML = time;
+             refresh();
+          }
+</script>
+<p class="logo">
+<a href="#"><img src="https://yt3.googleusercontent.com/H1K03ixSAoLW6kfZL7bP9G8iLFJVYhDTbL4tXLyCcyPAY1xHMkGfEhuanJpgkIDhjRQp8PUHUWc=s176-c-k-c0x00ffffff-no-rj" alt="logo"></a>
+</p>
+</p>
+
+</p>
+
+<!--scrolle automatique-->
+<script>
+    // Votre script de défilement ici
+    let direction = 1 ;
+    
+    function autoScroll() {
+        window.scrollBy(0, direction);
+        if (window.pageYOffset === 0 || window.pageYOffset + window.innerHeight >= document.body.offsetHeight) {
+            direction *= -1;
+        }
+    }
+    
+    setInterval(autoScroll, 50);
+    </script>
+<!--fin sa-->
+
+ <header id="h">
+  <br><br><br><br>
+<h1 id="bon" style="text-align:center; font-size:25PX;">  תזריע </h1>
+
+<!--changer les Horaire-->
+<table id="h1">
+<tr>
+  <!--titre tableau-->
+<h1 id="tit">
+ Semaine - חול   </h1>
+<td id="bri"><h1>
+<!--changement des horaire de la semaine-->
+Chahrit </h1> </td>
+<td id="m">7:40-8:20</td>
+<td id="dr"> <h1 id="dr"> שחרית </h1>
+</td>
+</tr> 
+
+<td><h1> Chahrit (dim)</h1> </td>
+<td id="m">8:00</td>
+<td id="dr"> <h1 id="dr">שחרית יום א׳</h1> </td>
+</tr>
+<tr>
+<td><h1>Minha-arvit</h1> </td>
+<td id="m">20:00</td>
+<td id="dr"> <h1 id="dr">מנחה-ערבית</h1> </td>
+</tr>
+<tr>
+<td><h1>Arvit </h1> </td>
+<td id="m">20:25</td>
+<td id="dr"> <h1 id="dr"> ערבית</h1> </td>
+<!--fin de changement des horaire de la semaine-->
+</tr>
+<tr>
+</table>
+
+<table id="h1">
+<tr> 
+    <!--titre tableau-->
+<h1 id="tit"> שבת </h1>
+<td id="bri">
+  <!-- changement des horaire de la chabbat-->
+  <h1>
+
+Minha-Arvit <p style=" font-size:10PX;"></p></h1> </td>
+<td id="m" >20h00</td>
+<td id="dr"> <h1 id="dr"> מנחה וערבית</h1>
+</td>
+<tr>
+<td><h1>Arvit</h1> </td>
+<td id="m">20h30</td>
+<td id="dr"> <h1 id="dr">ערבית</h1> </td>
+</tr>
+<tr>
+<td><h1>chahrit (pti'ha)</h1> </td>
+<td id="m">8h40</td>
+<td id="dr"> <h1 id="dr">שחרית</h1> </td>
+</tr>
+<tr>
+<td><h1>chahrit</h1> </td>
+<td id="m">9h00</td>
+<td id="dr"> <h1 id="dr">שחרית</h1> </td>
+</tr>
+
+<tr>
+<td><h1>Minha </h1> </td>
+<td id="m">19h30</td>
+<td id="dr"> <h1 id="dr"> מנחה </h1> </td>
+</tr>
+<tr>
+<td><h1>Arvit </h1> </td>
+<td id="m">21h30</td>
+<td id="dr"> <h1 id="dr">     
+ ערבית
+
+</h1> 
+<!-- fin de changement des horaire de la chabbat-->
+</td>
+</tr>
+</table>
+<br>
+<h3>בית הכנסת באר מרים </h3>
+
+<br><br><br><br><br><br><br><br><br>
+</header>
+<script src="script.js"></script>
+</body>
+</html>
